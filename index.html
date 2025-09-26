@@ -16,7 +16,41 @@
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BeFluence</title>
+    <title>BeFluence - Influencer marketing agency</title>
+    <meta
+      name="description"
+      content="We help our partners integrate influencer marketing throughout the entire funnel — from awareness to purchase and retention" />
+    <meta name="framer-search-index" content="./src/seo/index.json" />
+    <link
+      href="./src/media/seo/img.svg"
+      rel="icon"
+      media="(prefers-color-scheme: light)" />
+    <link
+      href="./src/media/seo/img.svg"
+      rel="icon"
+      media="(prefers-color-scheme: dark)" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="BeFluence - Influencer marketing agency" />
+    <meta
+      property="og:description"
+      content="We help our partners integrate influencer marketing throughout the entire funnel — from awareness to purchase and retention" />
+    <meta property="og:image" content="./src/media/seo/description.webp" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="BeFluence - Influencer marketing agency" />
+    <meta
+      name="twitter:description"
+      content="We help our partners integrate influencer marketing throughout the entire funnel — from awareness to purchase and retention" />
+    <meta name="twitter:image" content="./src/media/seo/description.webp" />
+
+    <meta name="robots" content="max-image-preview:large" />
+    <link rel="canonical" href="https://befluence.pro/" />
+    <meta property="og:url" content="https://befluence.pro/" />
     <script src="./src/scripts/imask.js"></script>
     <script src="./src/scripts/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./src/styles/swiper-bundle.css" />
@@ -175,7 +209,7 @@
           class="main__headerImg" />
         <section class="greetingSection" id="home">
           <div class="greetingSection__container">
-            <a href="#about" class="greetingSection__navButton anchorLink">
+            <a href="#contact" class="greetingSection__navButton anchorLink">
               <svg
                 width="37"
                 height="17"
@@ -366,7 +400,7 @@
                 class="mobileBreak" /><br />
               month, reaching 25 million+ users.</span
             >
-            <a href="#about" class="diveButton anchorLink">
+            <a href="#contact" class="diveButton anchorLink">
               <span class="diveButton__text">Dive deeper</span>
               <div class="diveButton__anim">
                 <svg
@@ -877,7 +911,7 @@
               Identity the most effective<br class="mobileBreak" />
               markets for product promotion.
             </span>
-            <a href="#about" class="diveButton anchorLink">
+            <a href="#contact" class="diveButton anchorLink">
               <span class="diveButton__text">Dive deeper</span>
               <div class="diveButton__anim">
                 <svg
@@ -1018,7 +1052,7 @@
               playsinline=""
               muted=""
               class="videoSection__finVideo">
-              <!-- <source src="./src/media/vid/fin/finDesk.webm" type="video/mp4" /> -->
+              <source src="./src/media/vid/fin/finDesk.webm" type="video/mp4" />
               <source src="./src/media/vid/fin/finDesk.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
@@ -1139,7 +1173,7 @@
               With experience across various verticals,<br />
               we know how to effectively collaborate with
             </span>
-            <a href="#about" class="diveButton anchorLink">
+            <a href="#contact" class="diveButton anchorLink">
               <span class="diveButton__text">Dive deeper</span>
               <div class="diveButton__anim">
                 <svg
@@ -1177,12 +1211,20 @@
               Let's Connect<br />And Talk
             </span>
           </div>
-          <form action="" class="formSection__form">
+          <form
+            method="POST"
+            action="https://script.google.com/macros/s/AKfycbxrmBEZZkggo8bLC4HLa-KRvQOGAXzuBhS_FD4TW2vTTnOgpBeaGyO5VgBgAKjfLqAL/exec"
+            class="gform contactForm formSection__form">
+            <label class="formSection__formLabel" for="dateInput">
+              <input class="formSection__formInput dateInput jsHidden
+              name="Date" id="dateInput"/>
+              <div class="formSection__formLayer"></div>
+            </label>
             <label class="formSection__formLabel" for="nameInput">
               <input
                 type="text"
                 class="formSection__formInput"
-                name="nameInput"
+                name="Name"
                 id="nameInput"
                 placeholder="Your Name *" />
               <div class="formSection__formLayer"></div>
@@ -1191,19 +1233,25 @@
               <input
                 type="text"
                 class="formSection__formInput"
-                name="contactInput"
+                name="Telegram"
                 id="contactInput"
-                placeholder="+1 (121) / @" />
+                placeholder="@telegram" />
               <div class="formSection__formLayer"></div>
             </label>
             <label class="formSection__formLabel" for="detailsInfo">
               <textarea
                 class="formSection__formInput"
-                name="detailsInfo"
+                name="Details"
                 id="detailsInfo"
-                placeholder="Type the related info here./src."></textarea>
+                placeholder="Send request"></textarea>
               <div class="formSection__formLayer"></div>
             </label>
+            <label class="formSection__formLabel" for="phoneInput">
+              <input class="formSection__formInput phoneInput jsHidden
+              name="Phone" id="phoneInput" />
+              <div class="formSection__formLayer"></div>
+            </label>
+
             <button type="submit" class="contactButton">
               <span class="contactButton__text">Submit the form</span>
               <div class="contactButton__anim">
@@ -1219,11 +1267,6 @@
                 </svg>
               </div>
             </button>
-            <span class="formSection__formCaption">
-              By signing up, you agree to our <br class="mobileBreak" />
-              <a href="#">Privacy Policy</a> and
-              <a href="#">Terms of Service</a>
-            </span>
           </form>
         </section>
         <div class="cursor arrow jsHidden"></div>
@@ -1364,6 +1407,10 @@
         </div>
       </footer>
     </div>
+    <script
+      data-cfasync="false"
+      type="text/javascript"
+      src="./src/scripts/formHandler.js"></script>
     <script src="./src/scripts/index.js"></script>
   </body>
 </html>

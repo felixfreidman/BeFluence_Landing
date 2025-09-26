@@ -145,16 +145,16 @@ function setStepActive() {
 
 setInterval(setStepActive, 3000);
 
-const contactMask = new IMask(document.querySelector('[name="contactInput"]'), {
-  mask: [
-    {
-      mask: "+{0}(000)000-00-00",
-    },
-    {
-      mask: /^@\S*@?\S*$/,
-    },
-  ],
-});
+// const contactMask = new IMask(document.querySelector('[name="contactInput"]'), {
+//   mask: [
+//     {
+//       mask: "+{0}(000)000-00-00",
+//     },
+// {
+//   mask: /^@\S*@?\S*$/,
+// },
+//   ],
+// });
 
 const toTopButtons = document.querySelectorAll(".ToTop");
 
@@ -222,6 +222,17 @@ document.addEventListener("DOMContentLoaded", () => {
   reportWindowSize();
 });
 
+window.addEventListener("load", () => {
+  const dateInput = document.querySelector(".dateInput");
+  const today = new Date();
+
+  const day = today.getDate();
+  const month = today.getMonth() + 1;
+  const year = today.getFullYear();
+
+  dateInput.value = `${day}/${month}/${year}`;
+});
+
 const anchorLinks = document.querySelectorAll(".anchorLink");
 
 anchorLinks.forEach((link) => {
@@ -232,4 +243,12 @@ anchorLinks.forEach((link) => {
       window.history.replaceState({}, document.title, newURL);
     }, 300);
   });
+});
+
+const contactForm = document.querySelector(".contactForm");
+contactForm.addEventListener("submit", (event) => {
+  const phoneInput = document.querySelector(".phoneInput");
+  if (phoneInput.value !== "") {
+    event.preventDefault();
+  }
 });
