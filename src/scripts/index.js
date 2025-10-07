@@ -244,11 +244,3 @@ anchorLinks.forEach((link) => {
     }, 300);
   });
 });
-
-const contactForm = document.querySelector(".contactForm");
-contactForm.addEventListener("submit", (event) => {
-  const phoneInput = document.querySelector(".phoneInput");
-  if (phoneInput.value !== "") {
-    event.preventDefault();
-  }
-});

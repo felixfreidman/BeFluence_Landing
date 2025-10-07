@@ -165,7 +165,7 @@ video::-webkit-media-controls-current-time-display {
 
 .header {
   position: absolute;
-  z-index: 4;
+  z-index: 100;
   width: 100%;
   display: flex;
   align-items: center;
@@ -985,7 +985,7 @@ video::-webkit-media-controls-current-time-display {
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 130px; }
+  gap: 60px; }
   .footer__row {
     width: 100%;
     display: flex;
@@ -1334,7 +1334,7 @@ video::-webkit-media-controls-current-time-display {
       top: auto;
       bottom: -150px;
       right: 0;
-      left: -70px;
+      left: -90px;
       margin: 0 auto;
       height: 900px;
       z-index: -1; }
@@ -1600,13 +1600,13 @@ video::-webkit-media-controls-current-time-display {
         line-height: 120%;
         text-align: center; }
   .footer {
-    padding: 46px 50px;
-    gap: 70px; }
+    padding: 26px 20px;
+    gap: 20px; }
     .footer__row {
       display: flex;
       flex-direction: column;
       align-items: start;
-      gap: 60px; }
+      gap: 40px; }
     .footer__subheader {
       font-size: 14px;
       line-height: 132%; }
@@ -1617,7 +1617,7 @@ video::-webkit-media-controls-current-time-display {
       display: flex;
       flex-direction: column;
       align-items: start;
-      gap: 50px; }
+      gap: 20px; }
       .footerContact__column {
         display: flex;
         flex-direction: column;
@@ -1642,7 +1642,7 @@ video::-webkit-media-controls-current-time-display {
   .greetingSection__video {
     bottom: -100px;
     right: 0;
-    left: -70px;
+    left: -90px;
     height: 600px; }
   .directionSection {
     padding: 52px 20px 20px;
@@ -1690,13 +1690,13 @@ video::-webkit-media-controls-current-time-display {
       .formSection__formLabel {
         width: 100%; }
   .footer {
-    padding: 46px 50px;
-    gap: 70px; }
+    padding: 26px 20px;
+    gap: 20px; }
     .footer__row {
       display: flex;
       flex-direction: column;
       align-items: start;
-      gap: 60px; }
+      gap: 40px; }
     .footer__subheader {
       font-size: 14px;
       line-height: 132%; }
@@ -1705,7 +1705,7 @@ video::-webkit-media-controls-current-time-display {
       display: flex;
       flex-direction: column;
       align-items: start;
-      gap: 50px; }
+      gap: 20px; }
       .footerContact__column {
         display: flex;
         flex-direction: column;

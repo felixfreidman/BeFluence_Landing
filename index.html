@@ -1213,18 +1213,20 @@
           </div>
           <form
             method="POST"
-            action="https://script.google.com/macros/s/AKfycbxrmBEZZkggo8bLC4HLa-KRvQOGAXzuBhS_FD4TW2vTTnOgpBeaGyO5VgBgAKjfLqAL/exec"
+            action="https://script.google.com/macros/s/AKfycbyxhPkd9DymtJGQMmdDvzROF_PDQGhdjIv6bB4SOTL9gGKRQ_5MjckrIWy-PJBMpHRv/exec"
             class="gform contactForm formSection__form">
-            <label class="formSection__formLabel" for="dateInput">
-              <input class="formSection__formInput dateInput jsHidden
-              name="Date" id="dateInput"/>
+            <label class="formSection__formLabel jsHidden" for="dateInput">
+              <input
+                class="formSection__formInput dateInput jsHidden"
+                name="Date"
+                id="dateInput" />
               <div class="formSection__formLayer"></div>
             </label>
             <label class="formSection__formLabel" for="nameInput">
               <input
                 type="text"
                 class="formSection__formInput"
-                name="Name"
+                name="UserName"
                 id="nameInput"
                 placeholder="Your Name *" />
               <div class="formSection__formLayer"></div>
@@ -1246,12 +1248,13 @@
                 placeholder="Send request"></textarea>
               <div class="formSection__formLayer"></div>
             </label>
-            <label class="formSection__formLabel" for="phoneInput">
-              <input class="formSection__formInput phoneInput jsHidden
-              name="Phone" id="phoneInput" />
+            <label class="formSection__formLabel jsHidden" for="honeypot">
+              <input
+                class="formSection__formInput honeypot jsHidden"
+                name="honeypot"
+                id="honeypot" />
               <div class="formSection__formLayer"></div>
             </label>
-
             <button type="submit" class="contactButton">
               <span class="contactButton__text">Submit the form</span>
               <div class="contactButton__anim">

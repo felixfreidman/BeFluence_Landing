@@ -236,7 +236,7 @@ video::-webkit-media-controls-current-time-display {
 
 .header {
   position: absolute;
-  z-index: 4;
+  z-index: 100;
   width: 100%;
   display: flex;
   align-items: center;
@@ -1393,7 +1393,7 @@ video::-webkit-media-controls-current-time-display {
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 130px;
+  gap: 60px;
 
   &__row {
     width: 100%;
@@ -1905,7 +1905,7 @@ video::-webkit-media-controls-current-time-display {
       top: auto;
       bottom: -150px;
       right: 0;
-      left: -70px;
+      left: -90px;
       margin: 0 auto;
       height: 900px;
       z-index: -1;
@@ -2308,14 +2308,14 @@ video::-webkit-media-controls-current-time-display {
   }
 
   .footer {
-    padding: 46px 50px;
-    gap: 70px;
+    padding: 26px 20px;
+    gap: 20px;
 
     &__row {
       display: flex;
       flex-direction: column;
       align-items: start;
-      gap: 60px;
+      gap: 40px;
     }
 
     &__subheader {
@@ -2332,7 +2332,7 @@ video::-webkit-media-controls-current-time-display {
       display: flex;
       flex-direction: column;
       align-items: start;
-      gap: 50px;
+      gap: 20px;
 
       &__column {
         display: flex;
@@ -2370,7 +2370,7 @@ video::-webkit-media-controls-current-time-display {
     &__video {
       bottom: -100px;
       right: 0;
-      left: -70px;
+      left: -90px;
       height: 600px;
     }
   }
@@ -2455,14 +2455,14 @@ video::-webkit-media-controls-current-time-display {
   }
 
   .footer {
-    padding: 46px 50px;
-    gap: 70px;
+    padding: 26px 20px;
+    gap: 20px;
 
     &__row {
       display: flex;
       flex-direction: column;
       align-items: start;
-      gap: 60px;
+      gap: 40px;
     }
 
     &__subheader {
@@ -2475,7 +2475,7 @@ video::-webkit-media-controls-current-time-display {
       display: flex;
       flex-direction: column;
       align-items: start;
-      gap: 50px;
+      gap: 20px;
 
       &__column {
         display: flex;
