@@ -231,6 +231,11 @@ window.addEventListener("load", () => {
   const year = today.getFullYear();
 
   dateInput.value = `${day}/${month}/${year}`;
+
+  const allMailLinks = document.querySelectorAll(".mailJS");
+  allMailLinks.forEach((link) => {
+    link.href = "mailto:simon@befluence.pro";
+  });
 });
 
 const anchorLinks = document.querySelectorAll(".anchorLink");

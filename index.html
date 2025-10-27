@@ -170,10 +170,7 @@
           <img src="./src/media/img/logo/logo.png" alt="" />
         </div>
         <div class="header__contacts">
-          <a
-            href="mailto:simon@befluence.pro"
-            target="_blank"
-            class="header__contactsLink">
+          <a href="" target="_blank" class="header__contactsLink mailJS">
             <svg
               width="21"
               height="21"
@@ -244,11 +241,13 @@
               Agency
             </span>
             <span class="greetingSection__subheader">
-              We help our partners integrate influencer marketing<br
+              We help our partners integrate
+              <br class="mobileBreak" />influencer marketing<br
                 class="mobileBreak" />
               throughout the
               <br />
-              entire funnel — from awareness to<br class="mobileBreak" />
+              entire funnel — <br class="mobileBreak" />from awareness to<br
+                class="mobileBreak" />
               purchase and retention
             </span>
             <div class="greetingSection__nums">
@@ -318,6 +317,17 @@
             class="greetingSection__video">
             <source
               src="./src/media/vid/decor/greetingVid.mp4"
+              type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <video
+            autoplay=""
+            loop=""
+            playsinline=""
+            muted=""
+            class="greetingSection__video mobileImg">
+            <source
+              src="./src/media/vid/decor/greetingVidMob.mp4"
               type="video/mp4" />
             Your browser does not support the video tag.
           </video>
@@ -1190,6 +1200,74 @@
             </a>
           </div>
         </section>
+        <section class="connectSection">
+          <div class="connectSection__column">
+            <div class="sectionTag">
+              <svg
+                width="37"
+                height="17"
+                viewBox="0 0 37 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="sectionTag__img">
+                <path
+                  d="M32.071 0.105621C35.2155 0.105621 37.5098 3.0812 36.7096 6.12222L34.8639 13.1349C34.3095 15.2418 32.4048 16.7109 30.2262 16.7111H5.18718C2.04267 16.7111 -0.251488 13.7355 0.548507 10.6945L2.39421 3.68179C2.94864 1.57497 4.85338 0.105818 7.03191 0.105621H32.071ZM8.48405 3.83511L6.39323 12.9543H14.0895C16.5565 12.9542 18.602 12.4876 19.0641 10.549L19.0915 10.4259C19.3706 9.12519 18.4999 8.3148 16.8464 8.11832L16.8473 8.06949C18.4818 7.92213 19.3633 7.34465 19.6149 6.24039L19.6413 6.11832C20.0004 4.44915 18.4268 3.83515 16.0456 3.83511H8.48405ZM20.943 3.83511L18.8522 12.9543H29.1882L29.7575 10.4503H23.7428L24.0065 9.30875H29.3591L29.8092 7.34488H24.4567L24.6823 6.33902H30.5749L31.1442 3.83511H20.943ZM13.9196 9.14957C14.7295 9.14961 15.058 9.35843 14.9518 9.83707L14.9255 9.96011C14.8453 10.3278 14.4363 10.5245 13.6882 10.5246H11.1471L11.4772 9.14957H13.9196ZM14.7282 6.26578C15.3541 6.26582 15.6091 6.46181 15.5163 6.87906L15.4899 6.97672C15.4107 7.29556 15.0519 7.48055 14.3649 7.48062H11.861L12.1384 6.26578H14.7282Z"
+                  fill="white" />
+              </svg>
+
+              <span class="sectionTag__text">Contact us</span>
+            </div>
+            <span class="connectSection__columnHeader">
+              Let's Connect<br />And Talk
+            </span>
+          </div>
+          <div class="connectSection__grid">
+            <a
+              href="https://t.me/BeFluence_bot"
+              class="connectSection__gridTile">
+              <img
+                src="./src/media/img/decor/infTile.png"
+                alt=""
+                class="connectSection__gridTileImg" />
+              <span class="messageButtton">
+                <span class="messageButtton__text">Join us</span>
+                <div class="messageButtton__anim">
+                  <svg
+                    width="17"
+                    height="14"
+                    viewBox="0 0 17 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1.12061 5.8118C5.49283 3.9068 8.40867 2.65069 9.86811 2.04347C14.0339 0.31097 14.8989 0.0101366 15.4631 0.000136552C15.5881 -0.00236345 15.8648 0.0284699 16.0448 0.175137C16.1964 0.297637 16.2381 0.464303 16.2581 0.58097C16.2781 0.697637 16.3031 0.96347 16.2831 1.17097C16.0581 3.54347 15.0806 9.2993 14.5831 11.956C14.3731 13.0793 13.9598 13.456 13.5581 13.4935C12.6873 13.5735 12.0264 12.9185 11.1831 12.3651C9.86228 11.4993 9.11644 10.9601 7.83478 10.116C6.35394 9.14014 7.31394 8.60347 8.15811 7.7268C8.37894 7.49764 12.2164 4.0068 12.2914 3.69014C12.2998 3.65014 12.3089 3.50264 12.2214 3.42514C12.1339 3.3468 12.0048 3.37347 11.9106 3.39514C11.7778 3.42514 9.66894 4.81903 5.58394 7.5768C4.9845 7.98791 4.44228 8.18819 3.95728 8.17764C3.42144 8.16597 2.39061 7.87514 1.62561 7.62597C0.685611 7.32014 -0.0610554 7.1593 0.00394464 6.64014C0.0378335 6.37014 0.410056 6.09403 1.12061 5.8118Z"
+                      fill="white" />
+                  </svg>
+                </div>
+              </span>
+            </a>
+            <a href="https://t.me/kseniya_bf" class="connectSection__gridTile">
+              <img
+                src="./src/media/img/decor/advTile.png"
+                alt=""
+                class="connectSection__gridTileImg" />
+              <span class="messageButtton">
+                <span class="messageButtton__text">Message us</span>
+                <div class="messageButtton__anim">
+                  <svg
+                    width="17"
+                    height="14"
+                    viewBox="0 0 17 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1.12061 5.8118C5.49283 3.9068 8.40867 2.65069 9.86811 2.04347C14.0339 0.31097 14.8989 0.0101366 15.4631 0.000136552C15.5881 -0.00236345 15.8648 0.0284699 16.0448 0.175137C16.1964 0.297637 16.2381 0.464303 16.2581 0.58097C16.2781 0.697637 16.3031 0.96347 16.2831 1.17097C16.0581 3.54347 15.0806 9.2993 14.5831 11.956C14.3731 13.0793 13.9598 13.456 13.5581 13.4935C12.6873 13.5735 12.0264 12.9185 11.1831 12.3651C9.86228 11.4993 9.11644 10.9601 7.83478 10.116C6.35394 9.14014 7.31394 8.60347 8.15811 7.7268C8.37894 7.49764 12.2164 4.0068 12.2914 3.69014C12.2998 3.65014 12.3089 3.50264 12.2214 3.42514C12.1339 3.3468 12.0048 3.37347 11.9106 3.39514C11.7778 3.42514 9.66894 4.81903 5.58394 7.5768C4.9845 7.98791 4.44228 8.18819 3.95728 8.17764C3.42144 8.16597 2.39061 7.87514 1.62561 7.62597C0.685611 7.32014 -0.0610554 7.1593 0.00394464 6.64014C0.0378335 6.37014 0.410056 6.09403 1.12061 5.8118Z"
+                      fill="white" />
+                  </svg>
+                </div>
+              </span>
+            </a>
+          </div>
+        </section>
         <section class="formSection" id="contact">
           <div class="formSection__column">
             <div class="sectionTag">
@@ -1371,9 +1449,9 @@
               >
               <div class="footerContact__columnLinks">
                 <a
-                  href="mailto:simon@befluence.pro"
+                  href=""
                   target="_blank"
-                  class="footerContact__columnContactLink">
+                  class="footerContact__columnContactLink mailJS">
                   <svg
                     width="21"
                     height="21"
