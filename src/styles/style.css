@@ -827,19 +827,53 @@ video::-webkit-media-controls-current-time-display {
   .techSection:hover .sectionTag__img path {
     fill: #bbff00; }
 
+.connectSection {
+  padding: 60px 120px;
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: start; }
+  .connectSection:hover .sectionTag__img path {
+    fill: #bbff00; }
+  .connectSection__column {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 28px; }
+    .connectSection__columnHeader {
+      font-weight: 500;
+      font-size: 46px;
+      line-height: 94%;
+      letter-spacing: -0.07em;
+      color: #ffffff; }
+  .connectSection__grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px; }
+    .connectSection__gridTile {
+      width: 100%;
+      height: 100%;
+      position: relative; }
+      .connectSection__gridTile img {
+        width: 100%;
+        height: 100%; }
+      .connectSection__gridTile:hover svg path {
+        fill: #b8f412; }
+
 .formSection {
   position: relative;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
   align-items: start;
   justify-content: space-between;
-  padding: 60px 120px 150px;
-  gap: 50px; }
+  padding: 60px 120px; }
   .formSection__column {
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 28px;
-    min-width: 260px; }
+    gap: 28px; }
     .formSection__columnHeader {
       font-weight: 500;
       font-size: 46px;
@@ -847,8 +881,8 @@ video::-webkit-media-controls-current-time-display {
       letter-spacing: -0.07em;
       color: #ffffff; }
   .formSection__form {
-    width: 760px;
-    max-width: 760px;
+    width: 100%;
+    max-width: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -856,7 +890,7 @@ video::-webkit-media-controls-current-time-display {
     gap: 22px;
     background: rgba(255, 255, 255, 0.01);
     border-radius: 40px;
-    padding: 38px 80px 30px;
+    padding: 35px 40px;
     overflow: hidden; }
     .formSection__form::before {
       content: "";
@@ -885,7 +919,7 @@ video::-webkit-media-controls-current-time-display {
       z-index: 2;
       background: linear-gradient(180deg, rgba(187, 255, 0, 0.05) 40%, rgba(187, 255, 0, 0.1) 50%, rgba(187, 255, 0, 0.05) 60%); }
     .formSection__formLabel {
-      width: 600px;
+      width: 100%;
       display: flex;
       flex-direction: column;
       align-items: start;
@@ -1103,6 +1137,43 @@ video::-webkit-media-controls-current-time-display {
       animation-iteration-count: infinite;
       animation-fill-mode: forwards; }
 
+.messageButton {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  filter: drop-shadow(0px 3px 16px rgba(160, 135, 137, 0.07));
+  border-radius: 110px;
+  gap: 8px;
+  padding: 8.5px 9px 8.5px 20px;
+  transition: all 0.3s ease; }
+  .messageButton__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 94%;
+    letter-spacing: -0.07em;
+    color: #ffffff;
+    pointer-events: none; }
+  .messageButton__anim {
+    background: rgba(255, 255, 255, 0.09);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    pointer-events: none; }
+    .messageButton__anim svg {
+      position: relative;
+      top: 1px; }
+      .messageButton__anim svg path {
+        transition: all 0.3s ease; }
+
 .diveButton {
   display: flex;
   align-items: center;
@@ -1219,7 +1290,8 @@ video::-webkit-media-controls-current-time-display {
   .techSection {
     padding-left: calc(calc(100% - 1060px) / 2);
     padding-right: calc(calc(100% - 1060px) / 2); }
-  .formSection {
+  .formSection,
+  .connectSection {
     padding-left: calc(calc(100% - 1200px) / 2);
     padding-right: calc(calc(100% - 1200px) / 2); }
   .footer {
@@ -1264,7 +1336,7 @@ video::-webkit-media-controls-current-time-display {
     bottom: 0;
     z-index: -3; }
   .greetingSection {
-    padding: 95px 20px 140px; }
+    padding: 95px 20px 60px; }
     .greetingSection__container {
       width: 100%;
       height: 100%;
@@ -1306,6 +1378,8 @@ video::-webkit-media-controls-current-time-display {
         .greetingSection__headerDecor::after {
           display: none !important; }
     .greetingSection__subheader {
+      font-size: 14px;
+      line-height: 132%;
       text-align: center; }
       .greetingSection__subheader br {
         display: none; }
@@ -1329,15 +1403,16 @@ video::-webkit-media-controls-current-time-display {
           font-size: 12px;
           line-height: 132%; }
     .greetingSection__video {
-      transform: rotate(-90deg);
       position: absolute;
       top: auto;
-      bottom: -150px;
+      bottom: 0;
       right: 0;
-      left: -90px;
+      left: 0;
+      width: 100%;
+      height: fit-content;
       margin: 0 auto;
-      height: 900px;
-      z-index: -1; }
+      z-index: -1;
+      display: none; }
   .brandsSection {
     padding: 27px 0; }
     .brandsSection__header {
@@ -1579,8 +1654,18 @@ video::-webkit-media-controls-current-time-display {
       max-width: 305px;
       height: 515px;
       max-height: 515px; }
+  .connectSection {
+    padding: 30px 20px;
+    gap: 20px; }
+    .connectSection__columnHeader {
+      font-size: 36px;
+      line-height: 94%; }
+    .connectSection__grid {
+      grid-template-columns: 1fr;
+      column-gap: 0;
+      row-gap: 20px; }
   .formSection {
-    padding: 26px 20px 200px;
+    padding: 30px 20px;
     gap: 20px;
     display: flex;
     flex-direction: column;
@@ -1624,7 +1709,10 @@ video::-webkit-media-controls-current-time-display {
         align-items: start;
         gap: 21px; }
     .footer__caption {
-      text-align: center; } }
+      text-align: center; }
+  .messageButton {
+    left: 24px;
+    bottom: 24px; } }
 
 @media screen and (max-width: 680px) {
   .main {
@@ -1640,10 +1728,8 @@ video::-webkit-media-controls-current-time-display {
       bottom: 0;
       z-index: -3; }
   .greetingSection__video {
-    bottom: -100px;
-    right: 0;
-    left: -90px;
-    height: 600px; }
+    bottom: 0;
+    right: 0; }
   .directionSection {
     padding: 52px 20px 20px;
     height: 100%;
@@ -1667,8 +1753,18 @@ video::-webkit-media-controls-current-time-display {
     bottom: 0px;
     width: 100%;
     opacity: 0.9; }
+  .connectSection {
+    padding: 30px 20px;
+    gap: 20px; }
+    .connectSection__columnHeader {
+      font-size: 36px;
+      line-height: 94%; }
+    .connectSection__grid {
+      grid-template-columns: 1fr;
+      column-gap: 0;
+      row-gap: 20px; }
   .formSection {
-    padding: 26px 20px 200px;
+    padding: 30px 20px;
     gap: 20px;
     display: flex;
     flex-direction: column;
