@@ -2010,7 +2010,7 @@ video::-webkit-media-controls-current-time-display {
     &__video {
       position: absolute;
       top: auto;
-      bottom: 0;
+      bottom: -50px;
       right: 0;
       left: 0;
       width: 100%;
