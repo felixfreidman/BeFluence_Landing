@@ -1728,7 +1728,7 @@ video::-webkit-media-controls-current-time-display {
       bottom: 0;
       z-index: -3; }
   .greetingSection__video {
-    bottom: 0;
+    bottom: -80px;
     right: 0; }
   .directionSection {
     padding: 52px 20px 20px;
