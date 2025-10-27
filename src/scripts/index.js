@@ -47,7 +47,6 @@ const swiper4 = new Swiper(".column4", {
     delay: 500,
   },
 });
-
 const swiper5 = new Swiper(".swiperBrand", {
   direction: "horizontal",
   loop: true,
@@ -145,17 +144,6 @@ function setStepActive() {
 
 setInterval(setStepActive, 3000);
 
-// const contactMask = new IMask(document.querySelector('[name="contactInput"]'), {
-//   mask: [
-//     {
-//       mask: "+{0}(000)000-00-00",
-//     },
-// {
-//   mask: /^@\S*@?\S*$/,
-// },
-//   ],
-// });
-
 const toTopButtons = document.querySelectorAll(".ToTop");
 
 toTopButtons.forEach((button) => {
@@ -180,17 +168,6 @@ function reportWindowSize() {
   let initWidth = 0;
   let zoomLevelPerPixel = 0;
   let zoomLevel = 0;
-
-  // if (currentWidth > 1399) {
-  //   initWidth = 1440;
-  //   zoomLevelPerPixel = 0.0005;
-  //   zoomLevel = (currentWidth - initWidth) * zoomLevelPerPixel + initZoom;
-  //   if (zoomLevel >= 1.24) {
-  //     wrapper.style.zoom = 1.24;
-  //   } else {
-  //     wrapper.style.zoom = zoomLevel;
-  //   }
-  // }
 
   if (currentWidth <= 1399 && currentWidth >= 961) {
     zoomLevelPerPixel = 0.0007;
@@ -223,15 +200,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 window.addEventListener("load", () => {
-  const dateInput = document.querySelector(".dateInput");
-  const today = new Date();
-
-  const day = today.getDate();
-  const month = today.getMonth() + 1;
-  const year = today.getFullYear();
-
-  dateInput.value = `${day}/${month}/${year}`;
-
   const allMailLinks = document.querySelectorAll(".mailJS");
   allMailLinks.forEach((link) => {
     link.href = "mailto:simon@befluence.pro";
